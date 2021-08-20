@@ -26,16 +26,16 @@
     a {
       font-size: $font-sm;
       color: $greyishBlue;
-      transition: color 200ms ease-in-out;
-      transition: background-image 200ms ease-in-out;
+      transition: color 300ms ease-in-out;
 
       &:not(:last-child) {
         margin-right: 32px;
       }
+
       &:hover {
         color: $darkBlue;
-        padding-bottom: 1.5625rem;
         background-image: linear-gradient(to right, $limeGreen, $brightCyan);
+        padding-bottom: 1.5625rem;
         background-size: 100% 10%;
         background-repeat: no-repeat;
         background-position-y: 100%;
