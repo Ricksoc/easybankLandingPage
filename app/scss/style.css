@@ -76,7 +76,12 @@ button,
 }
 
 .header nav {
-  padding: 24px;
+  padding: 1.0625rem 1.5rem;
+}
+
+.header__logo img {
+  width: 8.8125rem;
+  height: 1.375rem;
 }
 
 .header__menu > span {
@@ -93,13 +98,27 @@ button,
 .header__links a {
   font-size: 0.875rem;
   color: #9698a6;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+  -webkit-transition: background-image 200ms ease-in-out;
+  transition: background-image 200ms ease-in-out;
 }
 
 .header__links a:not(:last-child) {
   margin-right: 32px;
 }
 
-.header__cta {
+.header__links a:hover {
+  color: #2d314d;
+  padding-bottom: 1.5625rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  background-size: 100% 10%;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+}
+
+.header__links__cta {
   font-size: 0.875rem;
   color: white;
 }

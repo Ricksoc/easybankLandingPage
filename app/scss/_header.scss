@@ -1,8 +1,12 @@
 .header {
   nav {
-    padding: 24px;
+    padding: 1.0625rem 1.5rem;
   }
   &__logo {
+    img {
+      width: 8.8125rem;
+      height: 1.375rem;
+    }
   }
 
   &__menu {
@@ -22,13 +26,24 @@
     a {
       font-size: $font-sm;
       color: $greyishBlue;
+      transition: color 200ms ease-in-out;
+      transition: background-image 200ms ease-in-out;
+
       &:not(:last-child) {
         margin-right: 32px;
       }
+      &:hover {
+        color: $darkBlue;
+        padding-bottom: 1.5625rem;
+        background-image: linear-gradient(to right, $limeGreen, $brightCyan);
+        background-size: 100% 10%;
+        background-repeat: no-repeat;
+        background-position-y: 100%;
+      }
     }
-  }
-  &__cta {
-    font-size: $font-sm;
-    color: $white;
+    &__cta {
+      font-size: $font-sm;
+      color: $white;
+    }
   }
 }
