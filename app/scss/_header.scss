@@ -21,6 +21,10 @@
   &__links {
     a {
       font-size: $font-sm;
+      color: $greyishBlue;
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
     }
   }
   &__cta {

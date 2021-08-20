@@ -51,8 +51,9 @@ a:hover {
           align-items: center;
 }
 
-button, .button {
-  padding: 1rem 1.875rem;
+button,
+.button {
+  padding: 0.875rem 2.1875rem;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to right, #31d35c, #2bb7da);
   border: 0;
@@ -60,6 +61,18 @@ button, .button {
   cursor: pointer;
   color: white;
   font-weight: 400;
+}
+
+@media (max-width: 63.9375rem) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64rem) {
+  .hide-for-desktop {
+    display: none;
+  }
 }
 
 .header nav {
@@ -79,6 +92,11 @@ button, .button {
 
 .header__links a {
   font-size: 0.875rem;
+  color: #9698a6;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 32px;
 }
 
 .header__cta {
