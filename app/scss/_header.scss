@@ -29,7 +29,6 @@
       color: $greyishBlue;
       transition: color 300ms ease-in-out;
 
-
       &:not(:last-child) {
         margin-right: 32px;
       }
@@ -58,6 +57,13 @@
     &__cta {
       font-size: $font-sm;
       color: $white;
+    }
+  }
+  .button {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+    &:hover {
+      opacity: 0.6;
     }
   }
 }

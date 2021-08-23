@@ -134,4 +134,14 @@ button,
   font-size: 0.875rem;
   color: white;
 }
+
+.header .button {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.header .button:hover {
+  opacity: 0.6;
+}
 /*# sourceMappingURL=style.css.map */
