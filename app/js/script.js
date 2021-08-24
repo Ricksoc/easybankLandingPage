@@ -1,7 +1,8 @@
 const btnhamburger = document.querySelector("#btnhamburger");
+const header = document.querySelector(".header");
 
-btnhamburger.addEventListener("click", (e) => {
+header.addEventListener("click", (e) => {
   console.log("clicked " + e);
 
-  btnhamburger.classList.toggle("open");
+  header.classList.toggle("open");
 });
