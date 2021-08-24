@@ -1,10 +1,5 @@
 .header {
-  // Hamburger Open Styles
-
   &.open {
-    .overlay {
-      animation: fade-in 900ms ease-in-out forwards;
-    }
     .header__menu {
       > span:first-child {
         transform: rotate(45deg);
@@ -21,6 +16,7 @@
   }
 
   .overlay {
+    visibility: hidden;
     opacity: 0;
     background-color: $darkBlue; // fallback
     background: linear-gradient(to bottom, $darkBlue, transparent);

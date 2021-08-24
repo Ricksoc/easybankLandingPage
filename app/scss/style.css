@@ -3,10 +3,6 @@
     visibility: hidden;
     opacity: 0;
   }
-  1% {
-    visibility: hidden;
-    opacity: 0;
-  }
   to {
     visibility: visible;
     opacity: 1;
@@ -18,14 +14,42 @@
     visibility: hidden;
     opacity: 0;
   }
-  1% {
-    visibility: hidden;
-    opacity: 0;
-  }
   to {
     visibility: visible;
     opacity: 1;
   }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 300ms ease-in-out forwards;
+          animation: fade-in 300ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 300ms ease-in-out forwards;
+          animation: fade-out 300ms ease-in-out forwards;
 }
 
 html {
@@ -105,11 +129,6 @@ button,
   }
 }
 
-.header.open .overlay {
-  -webkit-animation: fade-in 900ms ease-in-out forwards;
-          animation: fade-in 900ms ease-in-out forwards;
-}
-
 .header.open .header__menu > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -125,6 +144,7 @@ button,
 }
 
 .header .overlay {
+  visibility: hidden;
   opacity: 0;
   background-color: #2d314d;
   background: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
