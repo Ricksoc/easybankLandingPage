@@ -1,3 +1,33 @@
+@-webkit-keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -75,6 +105,11 @@ button,
   }
 }
 
+.header.open .overlay {
+  -webkit-animation: fade-in 900ms ease-in-out forwards;
+          animation: fade-in 900ms ease-in-out forwards;
+}
+
 .header.open .header__menu > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -90,7 +125,7 @@ button,
 }
 
 .header .overlay {
-  display: none;
+  opacity: 0;
   background-color: #2d314d;
   background: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
   background: linear-gradient(to bottom, #2d314d, transparent);
