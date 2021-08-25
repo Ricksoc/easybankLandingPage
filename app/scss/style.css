@@ -79,6 +79,10 @@ body {
   color: #9698a6;
 }
 
+body.noscroll {
+  overflow: hidden;
+}
+
 a,
 a:visited,
 a:hover {
