@@ -19,13 +19,15 @@
     background-color: $darkBlue; // fallback
     background: linear-gradient(to bottom, $darkBlue, transparent);
     position: fixed;
-    top: 3.75rem;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
   }
 
   nav {
+    position: relative;
+    background-color: $white;
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
   }

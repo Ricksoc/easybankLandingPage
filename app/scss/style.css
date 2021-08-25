@@ -157,13 +157,15 @@ button,
   background: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
   background: linear-gradient(to bottom, #2d314d, transparent);
   position: fixed;
-  top: 3.75rem;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 }
 
 .header nav {
+  position: relative;
+  background-color: white;
   padding-top: 1.0625rem;
   padding-bottom: 1.0625rem;
 }
