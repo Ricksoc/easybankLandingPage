@@ -2,7 +2,7 @@ const btnhamburger = document.querySelector("#btnhamburger");
 const header = document.querySelector(".header");
 const overlay = document.querySelector(".fade");
 
-header.addEventListener("click", (e) => {
+btnhamburger.addEventListener("click", (e) => {
   console.log("clicked " + e);
 
   header.classList.toggle("open");
