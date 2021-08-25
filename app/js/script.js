@@ -1,6 +1,6 @@
 const btnhamburger = document.querySelector("#btnhamburger");
 const header = document.querySelector(".header");
-const overlay = document.querySelector(".fade");
+const fades = document.querySelectorAll(".fade");
 
 btnhamburger.addEventListener("click", (e) => {
   console.log("clicked " + e);
@@ -8,10 +8,16 @@ btnhamburger.addEventListener("click", (e) => {
   header.classList.toggle("open");
 
   if (header.classList.contains("open")) {
-    overlay.classList.remove("fade-out");
-    overlay.classList.add("fade-in");
+    // open Hamburger menu
+    fades.forEach((obj) => {
+      obj.classList.remove("fade-out");
+      obj.classList.add("fade-in");
+    });
   } else {
-    overlay.classList.remove("fade-in");
-    overlay.classList.add("fade-out");
+    // Close Hamburger menu
+    fades.forEach((obj) => {
+      obj.classList.remove("fade-in");
+      obj.classList.add("fade-out");
+    });
   }
 });

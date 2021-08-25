@@ -1,6 +1,6 @@
 .header {
   &.open {
-    .header__menu {
+    .header__toggle {
       > span:first-child {
         transform: rotate(45deg);
       }
@@ -16,8 +16,6 @@
   }
 
   .overlay {
-    visibility: hidden;
-    opacity: 0;
     background-color: $darkBlue; // fallback
     background: linear-gradient(to bottom, $darkBlue, transparent);
     position: fixed;
@@ -28,7 +26,8 @@
   }
 
   nav {
-    padding: 1.0625rem 1.5rem;
+    padding-top: 1.0625rem;
+    padding-bottom: 1.0625rem;
   }
   &__logo {
     img {
@@ -37,7 +36,7 @@
     }
   }
 
-  &__menu {
+  &__toggle {
     // Mobile menu
     > span {
       display: block;
@@ -52,6 +51,24 @@
       }
     }
   }
+&__menu {
+  position: absolute;
+  width: calc(100% - 3rem);
+  left: 50%;
+  transform: translateX(-50%);
+  background: $white;
+  margin-top: 1.5rem;
+  padding: 1.625rem;
+  border-radius: 5px;
+
+  a {
+    display: block;
+    padding: 0.625rem;
+    color: $darkBlue;
+    text-align: center;
+  }
+}
+
   &__links {
     a {
       position: relative;
