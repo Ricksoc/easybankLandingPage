@@ -4,7 +4,7 @@ const header = document.querySelector(".header");
 const fades = document.querySelectorAll(".fade");
 
 btnhamburger.addEventListener("click", (e) => {
-  console.log("clicked " + e);
+  console.log("hamburger clicked");
 
   header.classList.toggle("open");
 
