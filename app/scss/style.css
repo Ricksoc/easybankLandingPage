@@ -611,4 +611,13 @@ button:hover,
 .article__description {
   font-size: 0.8125rem;
 }
+
+.footer {
+  background-color: #2d314d;
+  color: white;
+}
+
+.footer a {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
