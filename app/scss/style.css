@@ -742,7 +742,8 @@ button:hover,
 }
 
 .footer__copyright {
-  font-size: 0.9375rem;
+  font-size: 0.8125rem;
+  color: #9698a6;
 }
 
 @media (min-width: 64em) {

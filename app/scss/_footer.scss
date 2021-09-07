@@ -98,7 +98,8 @@
   }
 
   &__copyright {
-    font-size: 0.9375rem;
+    font-size: 0.8125rem;
+    color: $greyishBlue;
 
     @include breakpoint-up(large) {
       grid-area: copyright;
