@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Ricksoc/easybankLandingPage)
-- Live Site URL: [Add live site URL here](https://ricksoc.github.io/easybankLandingPage/)
+- Solution URL: [Github Repo](https://github.com/Ricksoc/easybankLandingPage)
+- Live Site URL: [Github Pages Hosting](https://ricksoc.github.io/easybankLandingPage/)
 
 ## My process
 
