@@ -7,7 +7,7 @@
   .container {
     @include breakpoint-up(large) {
       display: grid;
-      grid-template-columns: repeat(3, 1fr) 2fr;
+      grid-template-columns: 2fr 1fr 1fr 3fr;
       grid-template-rows: 1fr auto;
       grid-template: "logo links1 links2 cta" "social links1 links2 copyright";
       gap: 1rem;
@@ -43,6 +43,14 @@
     a {
       display: inline-block;
       height: 1.25rem;
+
+      svg path {
+        transition: fill 150ms ease-in-out;
+      }
+
+      &:hover svg path {
+        fill: $limeGreen;
+      }
     }
 
     a:not(:last-child) {
@@ -78,8 +86,11 @@
     }
 
     a {
-      @include breakpoint-down(medium) {
-        line-height: 2.25rem;
+      line-height: 2.25;
+      transition: color 150ms ease-in-out;
+
+      &:hover {
+        color: $limeGreen;
       }
     }
   }
@@ -107,4 +118,9 @@
       justify-self: end;
     }
   }
+}
+
+.attribution {
+  margin-top: 4rem;
+  font-size: 0.875rem;
 }
